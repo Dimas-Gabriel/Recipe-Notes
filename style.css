@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=BBH+Sans+Hegarty&family=Michroma&display=swap');
+
+* {
+    margin: 0;
+}
+
+.fnb {
+    height: 30vh;
+    background-image:linear-gradient(to right, rgba(255,185,0,1.0) 0%, rgba(255,185,0,0.3)40%, rgba(255,185,0,0.1)70%, rgba(255,185,0,0.0)100%), url(fnb.png);
+    background-size: cover;
+    display:flex;
+    align-items: center;
+}
+
+.fnb h1 {
+    font-family: Akaya Telivigala, system-ui;
+    color: white;
+    font-size: 100px;
+    margin-left: 3%;
+}
+
+.button-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 70px;
+}
+
+.btn1 {
+    position: absolute;
+    left: 20px;
+    top: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.center-button {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 15px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+button {
+    border: 2px solid #EAB60C;
+    border-radius: 999px;
+    font-family: Akaya Telivigala;
+    color: #EAB60C;
+    background: transparent;
+    font-size: 30px;
+}
+
+.plus-sign{
+    font-size: 80px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+button:hover {
+    border: 2px solid #EAB60C;
+    background: #EAB60C;
+    color: white;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 10fr));
+    gap: 50px;
+    padding: 20px;
+}
+
+.card img {
+    width: 92%;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 15px auto 0 auto;
+    display: block;
+    justify-content: center;
+}
+
+.card {
+    font-family: Akaya Telivigala;
+    color: #EAB60C;
+    padding-bottom: 15px;
+    border: 2px solid #EAB60C;
+    border-radius: 20px;
+    max-width: 420px;
+    justify-content: center;
+    box-shadow: 3px -2px #EAB60C;
+}
+
+.card h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.detail-btn {
+    width: 90px;
+    height: 40px;
+    font-size: 28px;
+    box-shadow: 3px -1.5px #EAB60C;
+    margin-left: 15px;
+}
+
+.edit-btn {
+    margin-left: 25%;
+    width: 90px;
+    height: 40px;
+    font-size: 28px;
+    box-shadow: 3px -1.5px #EAB60C;
+}
+
+.delete-btn {
+    font-size: 28px;
+    width: 90px;
+    height: 40px;
+    box-shadow: 3px -1.5px #EAB60C;
+}
+
+.modal {
+    font-family: Akaya Telivigala;
+    color: #EAB60C;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.modal-body img {
+    width: 45%;
+    height: 390px;
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+    width: 55%;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#detailTitle {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+#detailTools{
+    white-space: pre-line;
+    font-size: large;
+}
+#detailMethod {
+    white-space: pre-line;
+    font-size: large;
+}

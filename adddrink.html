@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+
+<!--banner-->
+     <div class="fnb">
+        <h1>RECIPE NOTES</h1>
+    </div>
+
+<!--back-->
+    <button class="btn1" onclick="window.location.href='drink.html'"> 
+        <i class="fa-solid fa-arrow-left fa-2xl"></i>
+    </button>
+
+<!--form-->
+    <div class="new-form-drink">
+        <form id="drinkForm">
+            <textarea class="inpt1" id="title" rows="5" placeholder="RECIPE TITLE" required></textarea>
+            <textarea class="inpt2" id="tools" rows="5" placeholder="TOOLS AND MATERIAL" required></textarea>
+            <textarea class="inpt3" id="method" rows="5" placeholder="METHOD" required></textarea>
+            <div class="upload-box" id="uploadBox">
+                <p id="uploadText">Tarik & letakkan gambar di sini atau klik untuk pilih</p>
+                <input type="file" id="fileInput" accept="image/*">
+                <img id="previewImage" alt="Preview" style="display:none; max-width:200px; max-height:200px;" />
+            </div>
+            <button type="submit" class="btn2">SAVE</button>
+        </form>
+    </div>
+
+<script src="scriptdrink.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Recipe Notes</title>
+</head>
+<body>
+    
+<!--banner-->
+    <div class="fnb">
+        <h1>RECIPE NOTES</h1>
+    </div>
+
+<!--button form-->
+<section>
+    <div class="button-wrapper">
+        <button class="btn1" onclick="window.location.href='addfood.html'">
+            <i class="fa-solid fa-plus"></i> NEW FOOD
+        </button>
+
+        <div class="center-button">
+            <button class="btn2"> FOOD </button>
+            <button class="btn3" onclick="window.location.href='drink.html'"> DRINK </button>
+        </div>
+    </div>
+</section>
+
+<div id="recipeList" class="recipe-container"></div>
+
+<!-- Modal Detail -->
+<div id="detailModal" class="modal">
+  <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div class="modal-body">
+          <img id="detailImage" />
+          <div class="modal-text">
+              <h2 id="detailTitle"></h2>
+              <p><strong>Alat & Bahan:</strong></p>
+              <p id="detailTools"></p>
+              <p><strong>Langkah:</strong></p>
+              <p id="detailMethod"></p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    
